@@ -929,7 +929,7 @@
     const API = {
       async products() {
         //if (!CONFIG.useApi) return MOCK;
-        const r = await fetch('https://lavene-jeans-default-rtdb.firebaseio.com/products.json?auth=');
+        const r = await fetch('https://lavene-jeans-default-rtdb.firebaseio.com/products.json');
         if (!r.ok) throw new Error('Falha ao carregar produtos');
         return r.json();
       },
